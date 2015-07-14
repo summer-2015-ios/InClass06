@@ -33,6 +33,7 @@
 		3FD455581B55B5A5009A2BD3 /* NewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD455571B55B5A5009A2BD3 /* NewsItem.m */; };
 		3FD4555B1B55BB2D009A2BD3 /* StoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD4555A1B55BB2D009A2BD3 /* StoriesViewController.m */; };
 		3FD4555E1B55C15F009A2BD3 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD4555D1B55C15E009A2BD3 /* Story.m */; };
+		3FD455611B55D04F009A2BD3 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD455601B55D04F009A2BD3 /* StoryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,8 @@
 		3FD4555A1B55BB2D009A2BD3 /* StoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesViewController.m; sourceTree = "<group>"; };
 		3FD4555C1B55C15E009A2BD3 /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
 		3FD4555D1B55C15E009A2BD3 /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
+		3FD4555F1B55D04F009A2BD3 /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
+		3FD455601B55D04F009A2BD3 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 				3FD455061B55B344009A2BD3 /* ViewController.m */,
 				3FD455591B55BB2D009A2BD3 /* StoriesViewController.h */,
 				3FD4555A1B55BB2D009A2BD3 /* StoriesViewController.m */,
+				3FD4555F1B55D04F009A2BD3 /* StoryViewController.h */,
+				3FD455601B55D04F009A2BD3 /* StoryViewController.m */,
 				3FD455081B55B344009A2BD3 /* Main.storyboard */,
 				3FD4550B1B55B344009A2BD3 /* Images.xcassets */,
 				3FD4550D1B55B344009A2BD3 /* LaunchScreen.xib */,
@@ -325,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD455611B55D04F009A2BD3 /* StoryViewController.m in Sources */,
 				3FD455531B55B4A1009A2BD3 /* UIImageView+HighlightedWebCache.m in Sources */,
 				3FD455471B55B4A1009A2BD3 /* NSData+ImageContentType.m in Sources */,
 				3FD4554D1B55B4A1009A2BD3 /* SDWebImageManager.m in Sources */,
