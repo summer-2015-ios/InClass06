@@ -7,21 +7,59 @@
 //
 
 #import "ViewController.h"
+#import "NewsItem.h"
+#import "StoriesViewController.h"
 
-@interface ViewController ()
-
+@interface ViewController () <UITableViewDataSource>
+@property (nonatomic, strong) NSMutableArray* newsItems;
+@property (nonatomic, strong) UITableView* tableView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.newsItems = [[NSMutableArray alloc] init];
+    self.tableView = (UITableView*)[self.view viewWithTag:1000];
+    [self loadNewsItems];
     // Do any additional setup after loading the view, typically from a nib.
 }
-
+-(void) loadNewsItems{
+    NewsItem* item = [[NewsItem alloc] initWithName:@"Top Stories" Url:@"http://feeds.bbci.co.uk/news/rss.xml"];
+    self.newsItems[0] = item;
+    item = [[NewsItem alloc] initWithName:@"World" Url:@"http://feeds.bbci.co.uk/news/world/rss.xml"];
+    self.newsItems[1] = item;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void) setNewsItems:(NSMutableArray *)newsItems{
+    _newsItems = newsItems;
+    [self.tableView reloadData];
+}
+# pragma mark - UITableViewDataSource implementation
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.newsItems.count;
+}
 
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"newsCell"];
+    if(!cell){
+        
+    }
+    cell.textLabel.text = [(NewsItem*)self.newsItems[indexPath.row] name];
+   return cell;
+}
+#pragma mark - Navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    StoriesViewController* vc = [segue destinationViewController];
+    UITableViewCell* cell = (UITableViewCell*) sender;
+    long row = [self.tableView indexPathForCell:cell].row;
+    vc.url = [(NewsItem*)self.newsItems[row] url];
+}
 @end
