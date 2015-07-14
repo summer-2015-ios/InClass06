@@ -32,6 +32,7 @@
 		3FD455551B55B4A1009A2BD3 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD455451B55B4A1009A2BD3 /* UIView+WebCacheOperation.m */; };
 		3FD455581B55B5A5009A2BD3 /* NewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD455571B55B5A5009A2BD3 /* NewsItem.m */; };
 		3FD4555B1B55BB2D009A2BD3 /* StoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD4555A1B55BB2D009A2BD3 /* StoriesViewController.m */; };
+		3FD4555E1B55C15F009A2BD3 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD4555D1B55C15E009A2BD3 /* Story.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,8 @@
 		3FD455571B55B5A5009A2BD3 /* NewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsItem.m; sourceTree = "<group>"; };
 		3FD455591B55BB2D009A2BD3 /* StoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesViewController.h; sourceTree = "<group>"; };
 		3FD4555A1B55BB2D009A2BD3 /* StoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesViewController.m; sourceTree = "<group>"; };
+		3FD4555C1B55C15E009A2BD3 /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
+		3FD4555D1B55C15E009A2BD3 /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 				3FD455031B55B344009A2BD3 /* AppDelegate.m */,
 				3FD455561B55B5A5009A2BD3 /* NewsItem.h */,
 				3FD455571B55B5A5009A2BD3 /* NewsItem.m */,
+				3FD4555C1B55C15E009A2BD3 /* Story.h */,
+				3FD4555D1B55C15E009A2BD3 /* Story.m */,
 				3FD455051B55B344009A2BD3 /* ViewController.h */,
 				3FD455061B55B344009A2BD3 /* ViewController.m */,
 				3FD455591B55BB2D009A2BD3 /* StoriesViewController.h */,
@@ -325,6 +330,7 @@
 				3FD4554D1B55B4A1009A2BD3 /* SDWebImageManager.m in Sources */,
 				3FD4554B1B55B4A1009A2BD3 /* SDWebImageDownloader.m in Sources */,
 				3FD4555B1B55BB2D009A2BD3 /* StoriesViewController.m in Sources */,
+				3FD4555E1B55C15F009A2BD3 /* Story.m in Sources */,
 				3FD455521B55B4A1009A2BD3 /* UIImage+WebP.m in Sources */,
 				3FD455551B55B4A1009A2BD3 /* UIView+WebCacheOperation.m in Sources */,
 				3FD455481B55B4A1009A2BD3 /* SDImageCache.m in Sources */,

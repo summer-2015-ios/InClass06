@@ -29,6 +29,23 @@
     self.newsItems[0] = item;
     item = [[NewsItem alloc] initWithName:@"World" Url:@"http://feeds.bbci.co.uk/news/world/rss.xml"];
     self.newsItems[1] = item;
+    item = [[NewsItem alloc] initWithName:@"UK" Url:@"http://feeds.bbci.co.uk/news/uk/rss.xml"];
+    self.newsItems[2] = item;
+    item = [[NewsItem alloc] initWithName:@"Business" Url:@"http://feeds.bbci.co.uk/news/business/rss.xml"];
+    self.newsItems[3] = item;
+    item = [[NewsItem alloc] initWithName:@"Politics" Url:@"http://feeds.bbci.co.uk/news/politics/rss.xml"];
+    self.newsItems[4] = item;
+    item = [[NewsItem alloc] initWithName:@"Health" Url:@"http://feeds.bbci.co.uk/news/health/rss.xml"];
+    self.newsItems[5] = item;
+    item = [[NewsItem alloc] initWithName:@"Education" Url:@"http://feeds.bbci.co.uk/news/education/rss.xml"];
+    self.newsItems[6] = item;
+    item = [[NewsItem alloc] initWithName:@"Science and Environment" Url:@"http://feeds.bbci.co.uk/news/science_and_environment/rss.xml"];
+    self.newsItems[7] = item;
+    item = [[NewsItem alloc] initWithName:@"Technology" Url:@"http://feeds.bbci.co.uk/news/technology/rss.xml"];
+    self.newsItems[8] = item;
+    item = [[NewsItem alloc] initWithName:@"Entertainment and Arts" Url:@"http://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"];
+    self.newsItems[9] = item;
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
